@@ -48,14 +48,15 @@ const Header = () => {
             <FaSearch className="text-slate-600" />
           </button>
         </form>
-        <ul className="flex gap-4">
+
+        <ul className="flex gap-4 items-center">
           <Link to="/">
-            <li className="hidden sm:inline text-slate-700 hover:underline">
+            <li className="hidden sm:inline text-slate-700 hover:text-slate-500">
               Home
             </li>
           </Link>
           <Link to="/about">
-            <li className="hidden sm:inline text-slate-700 hover:underline">
+            <li className="hidden sm:inline text-slate-700 hover:text-slate-500">
               About
             </li>
           </Link>
@@ -68,7 +69,9 @@ const Header = () => {
                 className="rounded-full h-7 w-7 object-cover"
               />
             ) : (
-              <li className="text-slate-700 hover:underline">Sign In</li>
+              <button className="bg-slate-700 hover:bg-slate-500 text-white font-bold py-2 px-4 rounded">
+                Sign In
+              </button>
             )}
           </Link>
         </ul>
